@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { EditPageComponent } from './components/edit-page/edit-page.component';
 import { AddPageComponent } from './components/add-page/add-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
